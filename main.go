@@ -48,8 +48,8 @@ func startAPIServer(apiAddr string, gee *geecache.Group) {
 func main() {
 	var port int
 	var api bool
-	flag.IntVar(&port, "port", 8001, "Geecache server port")
-	flag.BoolVar(&api, "api", false, "Start a api server?")
+	flag.IntVar(&port, "port", 8001, "Geecache server port") // 通过命令行参数 -port 指定 HTTP 服务端口号，默认值为 8001。指定的当前节点
+	flag.BoolVar(&api, "api", false, "Start a api server?")  // 通过命令行参数 -api 指定是否启动 API 服务器，默认值为 false。
 	flag.Parse()
 
 	apiAddr := "http://localhost:9999"
