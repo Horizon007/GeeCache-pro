@@ -6,12 +6,13 @@ import (
 	"Geecache/geecache/registry"
 	"context"
 	"fmt"
-	"google.golang.org/protobuf/proto"
 	"log"
 	"net"
 	"strings"
 	"sync"
 	"time"
+
+	"google.golang.org/protobuf/proto"
 
 	clientv3 "go.etcd.io/etcd/client/v3"
 	"google.golang.org/grpc"
