@@ -8,7 +8,7 @@ import (
 	"net/http"
 )
 
-// db 是伪造的数据源
+// db 是伪造的数据源，相当于mysql
 var db = map[string]string{
 	"Tom":  "630",
 	"Jack": "589",
